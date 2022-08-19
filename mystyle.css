@@ -19,18 +19,18 @@ body {
   display: flex;
   overflow: hidden;
   border-radius: 10px;
-  margin-top: 2em;
   width: 80%;
   max-width: 600px;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  min-height: 100vh;
 }
 #image {
   background-image: url(./images/image-product-mobile.jpg);
   background-size: cover;
   height: 252px;
+  width: 100%;
 }
-
 .card .card-text span {
   font-family: "Montserrat", sans-serif;
   color: #858891;
@@ -94,16 +94,12 @@ h1 {
   }
   #image {
     background-image: url(./images/image-product-desktop.jpg);
-
     width: 100%;
-
-    height: 464px;
-    display: block;
-    overflow: hidden;
+    height: 475px;
   }
 
   .card .card-text {
-    padding: 1em;
+    padding: 0.8em;
   }
 
   h1 {
@@ -112,5 +108,14 @@ h1 {
 
   .card .card-text span {
     font-size: 12px;
+  }
+  .card-image,
+  .card-text {
+    flex: 50%;
+  }
+
+  .add-to-cart-button {
+    padding: 5% 20%;
+    margin-bottom: 10px;
   }
 }
